@@ -7,6 +7,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&family=Montserrat&family=Poppins&display=swap');
 
+body {
+    background-color: #FDF6EB;
+}
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -30,16 +34,20 @@
     color: #1B1919;
     font-family: 'Be Vietnam Pro', sans-serif;
     font-size: 1.5rem;
-    font-style: normal;
     font-weight: 400;
-    line-height: normal;
+    text-decoration: none;
+}
+
+.header__nav a:hover {
+    transform: scale(1.2);
+    transition: 1s;
 }
 
 .home__page {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    background-image: linear-gradient(to bottom, #FDF6EB 80%, #9E744A 80%);
+    background-image: linear-gradient(#FDF6EB 72%, #9E744A 44.9%);
 }
 
 .home__page__div {
@@ -116,12 +124,16 @@
 .notebook {
     position: absolute;
     top: 32rem;
-    left: 55rem;
+    left: 65rem;
 }
 
 .quemsou__page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
-    background-image: linear-gradient(to top, #FDF6EB 80%, #9E744A 80%);
+    gap: 10rem;
 }
 
 .quemsou__page__eu {
@@ -145,12 +157,27 @@
 }
 
 .quemsou__page__motivation {
-    width: 85rem;
-    margin-left: 19%;
-    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20rem;
+    width: 100%;
+    background-color: #D8C7B7;
+}
+
+.quemsou__page__motivation p {
+    color: #000000;
+    width: 40rem;
+    text-align: center;
+}
+
+.quemsou__page__motivation img {
+    height: 500px;
+    margin-left: 11%;
 }
 
 .curriculo__page {
+    margin: 15rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -158,7 +185,13 @@
     background-color: #FDF6EB;
 }
 
-.curriculo__page__academica p {
+.curriculo_page_informacoes{
+    display: flex;
+    flex-direction: column;
+    gap: 4.5rem;
+}
+
+.curriculo_page_informacoes p {
     color: #412B20;
     font-family: 'Be Vietnam Pro', sans-serif;
     font-size: 2rem;
@@ -167,21 +200,397 @@
     line-height: normal;
 }
 
-.informatica {
+.formacoes_academica_complementar{
+    display: flex;
+    gap: 2.5rem;
+}
+
+.formacao_academica{
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.formacao{
     display: flex;
     align-items: center;
+    justify-content: center;
     width: 33.25rem;
     height: 13.75rem;
     border-radius: 1.875rem;
     background: #D8C7B7;
     box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    padding: 1.5rem;
+    gap: 1.5rem;
 }
 
-.informatica__title {
+.description{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.formacao .formacao_title {
+    color: #1B1B1B;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-align: left;
+}
+
+.formacao .formacao_description {
+    color: #1B1B1B;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.minhas__habilidades {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.hard__skills{
+    display: flex;
+    gap: 4.60rem;
+}
+
+.minha__hard__skill{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 12.5rem;
+    height: 12.5rem;
+    margin: 1.5rem 0 0 0;
+    background-color: #D8C7B7;
+    border-radius: 99%;
+    box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.25) inset;
+}
+
+.minha__hard__skill img{
+    width: 5rem;
+}
+
+.minha__hard__skill p{
+    color: #1B1B1B;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.375rem;
+    font-weight: 600;
+}
+
+.meusprojetos__page {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.meusprojetos__page__title {
+    color: #412B20;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.meusprojetos__page__projetos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;  
+    gap: 2rem;
+}
+
+.meusprojetos__page__projetos__criptografador {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+    height: 50rem;
+    gap: 2rem;
+    padding: 2rem;
+    border-radius: 3.75rem;
+    background: rgba(216, 199, 183, 0.40);
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.criptografador__title {
+    color: #1B1B1B;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.375rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.criptografador__description {
+    width: 40rem;
+    text-align: center;
     color: #1B1B1B;
     font-family: 'Poppins', sans-serif;
     font-size: 1.125rem;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 400;
     line-height: normal;
+}
+
+.criptografador__button {
+    display: flex;
+    gap: 2rem;
+}
+
+.criptografador__button__deploy {
+    width: 16.25rem;
+    height: 3.75rem;
+    border: 2px solid #412B20;
+    border-radius: 0.75rem;
+    background: #412B20;
+    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.5);
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3rem;
+}
+
+.criptografador__button__deploy:hover {
+    cursor: pointer;
+    border: 4px solid #D8C7B7;
+    background-color: #9E744A;
+    transform: scale(1.2);
+    transition: 1s;
+}
+
+.criptografador__button__repository {
+    width: 16.25rem;
+    height: 3.75rem;
+    border: 3px solid #D8C7B7;
+    border-radius: 0.75rem;
+    background: #D8C7B7;
+    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.5);
+    color: #1B1919;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3rem;
+}
+
+.criptografador__button__repository:hover {
+    cursor: pointer;
+    border: 4px solid #D8C7B7;
+    background-color: #9E744A;
+    transform: scale(1.2);
+    transition: 1s;
+}
+
+.meusprojetos__page__projetos__emaberto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+    height: 50rem;
+    gap: 2rem;
+    padding: 2rem;
+    border-radius: 3.75rem;
+    background: rgba(216, 199, 183, 0.40);
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.emaberto__button {
+    width: 16.25rem;
+    height: 3.75rem;
+    border: 2px solid #C2C2C2;
+    border-radius: 0.75rem;
+    background: #C2C2C2;
+    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.5);
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3rem;
+}
+
+.emaberto__button:hover {
+    cursor: pointer;
+    border: 4px solid #C2C2C2;
+    background-color: #C2C2C2;
+    transform: scale(1.2);
+    transition: 1s;
+}
+
+.fale_comigo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #1B1B1B;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.375rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    height: 100vh;
+}
+
+.fale_comigo_text{
+    width: 41rem;
+    margin: 0 0 2.5rem 0;
+}
+
+.fale_comigo_text h1{
+    color: #412B20;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 0.5rem;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info_pessoais_obrigatorias, .celular_assunto{
+    display: flex;
+    gap: 1rem;
+    margin: 1.5rem 0 1.5rem 0;
+}
+
+.name, .email, .numero, .assunto, .enviar{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+#nome, #telefone{
+    width: 15rem;
+    height: 2.5rem;
+    border-radius: 0.75rem;
+    border: 1px solid #1B1919;
+}
+
+#email, #assunto{
+    width: 25rem;
+    height: 2.5rem;    
+    border-radius: 0.75rem;
+    border: 1px solid #1B1919;
+}
+
+#mensagem{
+    height: 8rem;
+    width: 41rem;   
+    border-radius: 0.75rem;
+    border: 1px solid #1B1919;
+}
+
+#enviar{
+    margin: 1.5rem;
+    color: white;
+    width: 15rem;
+    height: 2.5rem;
+    border: 4px solid #412B20;
+    border-radius: 0.75rem;
+    background: #412B20;
+    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.6);
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.215rem;
+}
+
+#enviar:hover {
+    cursor: pointer;
+    border: 4px solid #D8C7B7;
+    background-color: #9E744A;
+    transform: scale(1.2);
+    transition: 1s;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15rem;
+    width: auto;
+    height: 21.375rem;
+    background: #412B20;
+}
+
+.footer__conteudo {
+    display: flex;
+    flex-direction: row;
+    gap: 20rem;
+    padding: 5rem 0 0 0;
+}
+
+.footer__menu {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    color: #FFF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.footer__menu p {
+    margin-bottom: 1rem;
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.375rem;
+    font-weight: 600;
+}
+
+.footer__menu a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+
+.footer__menu a:hover {
+    transform: scale(1.2);
+    transition: 1s;
+}
+
+.footer__redes {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.footer__redes p {
+    margin-bottom: 1rem;
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.375rem;
+    font-weight: 600;
+}
+
+.footer__redes a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+
+.footer__redes a:hover {
+    transform: scale(1.2);
+    transition: 1s;
+}
+
+@media screen and (max-width: 600px) {
+
 }
