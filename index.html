@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 
 <html lang="pt">
-
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +9,6 @@
     </head>
 
     <body>
-
         <header class="header">
 
             <div class="header__logo">
@@ -18,17 +16,17 @@
             </div>
 
             <nav class="header__nav">
-                <a>Home</a>
-                <a>Quem sou</a>
-                <a>Currículo</a>
-                <a>Projetos</a>
-                <a>Fale comigo</a>
+                <a href="#home__page">Home</a>
+                <a href="#quemsou__page">Quem sou</a>
+                <a href="#curriculo__page">Currículo</a>
+                <a href="#meusprojetos__page">Projetos</a>
+                <a href="#fale_comigo">Fale comigo</a>
             </nav>
 
         </header>
 
         <main>
-            <section class="home__page">
+            <section class="home__page" id="home__page">
 
                 <div class="home__page__div">
                     <div class="home__page__key">
@@ -53,42 +51,207 @@
                     <a href="https://www.linkedin.com/in/bruno-santos-silveira/" target="_blank"><button class="home__page__redes__linkedin"><img src="./assets/images/linkedin.svg" alt="linkedin"></button></a>
                     <a href="https://github.com/bruno-ssilveira" target="_blank"><button class="home__page__redes__github"><img src="./assets/images/github.svg" alt="github"></button></a>
                 </div>
-
+                
             </section>
 
-            <section class="quemsou__page">
+            <section class="quemsou__page" id="quemsou__page">
 
                 <div class="quemsou__page__eu">
                     <img src="./assets/images/eu.png" class="quemsou__page__eu__foto" alt="foto">
 
                     <div class="quemsou__page__eu__description">
                         <p class="home__page__title">Hello, world!</p>
-                        <p class="home__page__description">Sou o Bruno, desenvolvedor full stack. Lorem ipsum bla bla bla bla Codificando ideias e conectando possibilidades: bem-vindo(a) ao meu mundo digital! bla bla bla adoro programar em java pipopopopop blua blu ble blua blue blu ble.</p>
+                        <p class="home__page__description">Sou o Bruno, Desenvolvedor Full Stack, prazer!<br> Me encantei pela área de TI, e atualmente estudo back-end, front-end e amazon web services.<br>Faço alguns free-lances e estou participando de programas com grandes empresas para entrar no mercado de trabalho na área de TI. &#x1F44B;</p>
                     </div>
                 </div>
 
                 <div class="quemsou__page__motivation">
-                    <p class="home__page__description">"Sou o Bruno, desenvolvedor full stack. Lorem ipsum bla bla bla bla Codificando ideias e conectando possibilidades: bem-vinndo digital! bla bla bla blue djakdjakjd sjsjskkd skskksksk adoro programar em java."</p>
+                    <p class="home__page__description">"A vida é confusão<br>
+                        Diversas vias infindas<br>
+                        Na qual se aprende<br>
+                        Ou se prende"
+                    </p>
+
+                    <img src="./assets/images/viasinfindas.svg" alt="">
                 </div>
 
             </section>
 
-            <section class="curriculo__page">
-                <div class="curriculo__page__academica">
-                    <p>Formação Acadêmica</p>
-                    <div class="informatica">
-                        <img src="./assets/images/002-computador.png" alt="computador">
-                        <p class="informatica__title">Técnico em Informática para Internet: Desenvolvimento de Softwares</p>
-                        <p class="informatica__description">2023 - Em andamento. Fundação Escola Técnica Liberato Salzano Vieira da Cunha.</p>
+            <section class="curriculo__page" id="curriculo__page">
+                <div class="curriculo_page_informacoes">
+
+                    <div class="formacoes_academica_complementar">
+
+                        <div class="formacao_academica">
+                            <p>Formação Acadêmica</p>
+
+                            <div class="formacao">
+                                <img src="./assets/images/computador.png" alt="computador">
+                                <div class="description">
+                                    <p class="formacao_title">Técnico em Informática para Internet: Desenvolvimento de Softwares</p>
+                                    <p class="formacao_description">2023 - Em andamento. Fundação Escola Técnica Liberato Salzano Vieira da Cunha.</p>
+                                </div>
+                            </div>
+
+                            <div class="formacao">
+                                <img src="./assets/images/eletricidade.png" alt="torre de alta tensão">
+                                <div class="description">
+                                    <p class="formacao_title">Técnico em Eletrotécnica</p>
+                                    <p class="formacao_description">2017 - 2020. Escola Técnica Estadual Parobé.</p>
+                                </div>
+                            </div>  
+
+                        </div>
+
+                        <div class="formacao_academica">
+
+                            <p>Formação Complementar</p>
+
+                            <div class="formacao">
+                                <img src="./assets/images/devbackend.png" alt="página de desenvolvimento">
+                                <div class="description">
+                                    <p class="formacao_title">Desenvolvedor Backend</p>
+                                    <p class="formacao_description">2023 - Em andamento. Participo do programa de formação backend da Oracle Next Education.</p>
+                                </div>
+                            </div>
+
+                            <div class="formacao">
+                                <img src="./assets/images/cloud.png" alt="cloud">
+                                <div class="description">
+                                    <p class="formacao_title">AWS Solutions Architect</p>
+                                    <p class="formacao_description">2023 - Em andamento. Programa Nova Geração do Instituto Caldeira.</p>
+                                </div>
+                            </div>  
+                        
+                        </div>
                     </div>
 
-                    <div class="eletrotecnica">
+                    <div class="minhas__habilidades">
 
+                        <p class="minhas__habilidades__p">Minhas Hard Skills</p>
+
+                        <div class="hard__skills">
+
+                            <div class="minha__hard__skill">
+                                <img src="./assets/images/java.png" alt="Logo representativo da linguagem JAVA.">
+                                <p>Java</p>
+                            </div>
+
+                            <div class="minha__hard__skill">
+                                <img src="./assets/images/javascript.png" alt="Logo representativo da linguagem JavaScript.">
+                                <p>JavaScript</p>
+                            </div>
+
+                            <div class="minha__hard__skill">
+                                <img src="./assets/images/html.png" alt="Logo representativo da linguagem de marcação HTML.">
+                                <p>HTML</p>
+                            </div>
+
+                            <div class="minha__hard__skill">
+                                <img src="./assets/images/documento-css.png" alt="Logo representativo de pasta de documento com CSS.">
+                                <p>CSS</p>
+                            </div>
+
+                        </div>
+
+                 </div>
+
+                </div>
+            </section>
+
+            <section class="meusprojetos__page" id="meusprojetos__page">
+
+                <h1 class="meusprojetos__page__title">Meus projetos</h1>
+
+                <div class="meusprojetos__page__projetos">
+                    <div class="meusprojetos__page__projetos__criptografador">
+                        <img src="./assets/images/projeto_criptografador.png" alt="projeto criptografador">
+                        <p class="criptografador__title">Criptografador de Textos</p>
+                        <p class="criptografador__description">O projeto foi desenvolvido utilizando HTML, CSS e JavaScript. Através do web app é possível criptografar e descriptografar textos, além disso, tem um botão para copiar as frases critografadas para a área de transferência.</p>
+                                    
+                        <div class="criptografador__button">
+                            <a href="https://bruno-ssilveira.github.io/challange_one_alura/" target="_blank"><button class="criptografador__button__deploy">Acessar Deploy</button></a>
+                            <a href="https://github.com/bruno-ssilveira/challange_one_alura" target="_blank"><button class="criptografador__button__repository">Acessar Repositório</button></a>
+                        </div>
+                    </div>
+
+                    <div class="meusprojetos__page__projetos__emaberto">
+                        <img src="./assets/images/projeto.png" alt="projeto em aberto">
+                        <p class="criptografador__title">Em breve</p>
+                        <p class="criptografador__description">Em breve projeto backend desenvolvido em Java.</p>
+                                    
+                        <div class="criptografador__button">
+                            <a><button class="emaberto__button">Acessar Deploy</button></a>
+                            <a><button class="emaberto__button">Acessar Repositório</button></a>
+                        </div>
                     </div>
                 </div>
+
+            </section>
+
+            <section class="fale_comigo" id="fale_comigo">
+
+                <div class="fale_comigo_text">
+                    <h1>Fale comigo</h1>
+                    <p>Ficou com alguma dúvida? Entre em contato comigo!</p>
+                </div>
+
+                <form onsubmit="return processarFormulario()" class="formulario">
+                    <div class="info_pessoais_obrigatorias">
+                        <div class="name">
+                            <label for="nome">Nome:*</label>
+                            <input type="text" id="nome" name="nome" required>
+                        </div>
+
+                        <div class="email">
+                            <label for="email">E-mail:*</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    </div>
+
+                    <div class="celular_assunto">
+                        <div class="numero">
+                            <label for="telefone">Telefone:</label>
+                            <input type="number" id="telefone" name="telefone">
+                        </div>
+                    
+                        <div class="assunto">
+                            <label for="assunto">Assunto:*</label>
+                            <input type="text" id="assunto" name="assunto" required>
+                        </div>
+                    </div>
+                
+                    <div class="assunto">
+                        <label for="mensagem">Mensagem:*</label>
+                        <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+                    </div>
+
+                    <button type="submit" id="enviar">Enviar</button>
+                
+                </form>
+
             </section>
         </main>
 
-    </body>
+        <footer class="footer">
+            <div class="footer__conteudo">
+                <div class="footer__menu">
+                    <p>Menu</p>
+                    <a href="#home__page">Home</a>
+                    <a href="#quemsou__page">Quem sou</a>
+                    <a href="#curriculo__page">Currículo</a>
+                    <a href="#meusprojetos__page">Projetos</a>
+                    <a href="#fale_comigo">Fale comigo</a>
+                </div>
 
+                <div class="footer__redes">
+                    <p>Redes sociais</p>
+                    <a href="https://www.linkedin.com/in/bruno-santos-silveira/" target="_blank">Linkedin</a>
+                    <a href="https://github.com/bruno-ssilveira" target="_blank">GitHub</a>
+                </div>
+            </div>
+
+            <img src="./assets/images/bigcoffee.png" alt="big coffee">
+        </footer>
+    </body>
 </html>
